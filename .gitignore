@@ -5,4 +5,4 @@ crash.log
 crash.*.log
 *.tfvars
 *.tfvars.json
-.terraform.lock.hcl
+

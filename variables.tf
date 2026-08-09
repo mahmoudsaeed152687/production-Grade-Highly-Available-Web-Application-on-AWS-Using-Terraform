@@ -62,4 +62,25 @@ variable "private_db_subnet_cidrs" {
   ]
 }
 
+variable "db_name" {
+  description = "Initial PostgreSQL database name"
+  type        = string
+  default     = "appdb"
+}
 
+variable "db_username" {
+  description = "PostgreSQL master username"
+  type        = string
+  sensitive   = true
+}
+
+variable "db_password" {
+  description = "PostgreSQL master password"
+  type        = string
+  sensitive   = true
+}
+
+variable "alert_email" {
+  description = "Email address for CloudWatch alerts"
+  type        = string
+}
